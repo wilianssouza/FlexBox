@@ -1,0 +1,148 @@
+/* Tags Gerais (elemento) */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    padding: 10px 0;
+    background-image: url('imagens/fundo-topo.jpg')
+}
+
+header h1{
+    margin: 0;
+    height:84px;
+}
+
+nav{
+    padding: 15px 0;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    background-image: url('imagens/patinha-preta.png');
+    background-repeat: no-repeat; /* não deixa a patinha repetir */
+    background-position: center right; /*posiciona o background no centro e a direta */
+    padding-right: 27px;/* 27px de espaçamento da margem direita*/
+    margin-right: 10px;/*aplicará uma margim entre a primeira patinha e o segundo item do menu*/
+
+}
+nav a{
+    color:#000;
+    text-decoration: none;
+    }
+nav a:hover{
+    color: #6DD432;
+}
+
+/* FORM  */
+form{
+    width: 380px;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    border: 1px solid #6DD432;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+
+}
+h2{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+iframe{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid #6DD432;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+/* Especificos (#id) */
+#itemContato{
+    background-image: none;
+    /* não será adicionado a patinha no ultimo item do menu */
+    padding-right: 0;
+    margin-right: 0;
+}
+#produtos .flex-conteiner, #contato .flex-conteiner{
+    margin-top: 43px;
+}
+/* irá dar uma margem entre o elementos*/
+
+
+/* Grupos de elementos diferente (.classe) */
+.fundo-verde{
+    background-color: #bdff9c;
+}
+.conteiner{
+    width:900px;
+    margin: 0 auto; /* faz o alinhamento centralizado da pagina*/
+    padding: 56px 0;
+    
+}
+
+.conteiner-float{
+    display: table;
+    /*O display table automaticamente faz o clear fix*/
+  
+}
+
+.flex-conteiner{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.conteiner-100{
+    width: 100%;
+}
+.flex-conteiner .col{
+    width: 430px;
+}
+
+.produto{
+    width: 235px;
+ 
+}
+
+.produto figure{
+    border: 1px solid #c4c4c4;
+    background-color: #FFF;
+    margin: 0 0 15px 0; /* esquerda topo direta e rodapé*/
+    padding: 0;
+    text-align: center;
+    height: 160px;/* todos os produtos terão a mesma altura */
+    line-height: 160px;
+}
+.produto figure img{
+    vertical-align: middle;
+    
+}
+.texto-centralizado{
+    text-align: center;
+    
+
+}
+
+.btn-pata{
+    border:1px solid #91e467;
+    background-color:#D2FBBD;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    cursor:pointer; 
+}
+
